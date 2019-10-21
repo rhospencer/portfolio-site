@@ -1,0 +1,60 @@
+#about {
+    @include window($primary-background);
+    scroll-snap-align: center;
+}
+
+.about-section-holder {
+    @include section;
+    @include flex-row(center, center);
+}
+
+.about-section {
+    width: 80%;
+    height: 80%;
+    @include flex-row(center, center);
+    background: $secondary-background;
+}
+
+.about-photos-holder {
+    height: 100%;
+    width: 40%;
+    // background: blue;
+    @include flex-row(center, center);
+}
+
+.about-photos {
+    width: 80%;
+    height: 85%;
+    // @include flex-row(center, center);
+    img {
+        object-fit: cover;
+    }
+}
+
+.photo1{
+    @include photo;
+    background-image: url('../../assets/picture1.png');
+    background-position-x: center;
+}
+
+.photo2 {
+    @include photo;
+    background-image: url('../../assets/picture3.JPG');
+}
+
+.photo4 {
+    @include photo;
+    background-image: url('../../assets/picture2.JPG');
+    background-position-y: 80%;
+}
+
+.holder {
+    height: 100%;
+    width: 100%;
+}
+
+.about-info-holder {
+    height: 80%;
+    width: 60%;
+    background: red;
+}

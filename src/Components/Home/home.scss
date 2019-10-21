@@ -1,0 +1,40 @@
+#home {
+    @include window($secondary-background);
+    background-image: url('../../assets/portfolio_hero.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    @include flex-row(center, center);
+    scroll-snap-align: center;
+}
+
+.header {
+    width: 100vw;
+    height: 20vh;
+    margin-top: 5vh;
+    background: $secondary-background-opacity;
+    opacity: 0;
+    animation-name: header-appear;
+    animation-duration: 2s;
+    animation-delay: 1s;
+    animation-fill-mode: forwards;
+    @include flex-column(space-evenly, center);
+    position: relative;
+    h1 {
+        color: $primary-color;
+        font-size: 3rem;
+    }
+    h4 {
+        color: $font-color;
+        font-size: 1.2rem;
+        font-weight: 200;
+    }
+}
+
+@keyframes header-appear {
+    0% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
+}

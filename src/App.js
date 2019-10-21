@@ -1,37 +1,26 @@
 import React from 'react';
 import './app.scss';
+import Nav from './Components/Nav/Nav'
+import Home from './Components/Home/Home'
+import About from './Components/About/About'
+import Projects from './Components/Projects/Projects'
+import Skills from './Components/Skills/Skills'
+import Contact from './Components/Contact/Contact'
+
 
 function App() {
   return (
-    <div className="App">
-      <nav>
-        <div className="name">
-          <h4>Spencer Rhoton</h4>&nbsp;<h6>Web Developer</h6>
-        </div>
-        <div className="nav-items">
-          <a href="#home">Home</a>
-          <a href="#about">About</a>
-          <a href="#projects">Projects</a>
-          <a href="#skills">Skills</a>
-          <a href="#contact">Contact</a>
-        </div>
-      </nav>
-      <div id="home">
-          
-      </div>
-      <div id="about">
-
-      </div>
-      <div id="projects">
-
-      </div>
-      <div id="skills">
-
-      </div>
-      <div id="contact">
-
-      </div>
+    <body>
+      <div className="App">
+      <Nav />
+      <Home />
+      <About />
+      <Projects />
+      <Skills />
+      <Contact />
     </div>
+    </body>
+    
   );
 }
 

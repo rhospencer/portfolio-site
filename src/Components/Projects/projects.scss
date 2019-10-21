@@ -1,0 +1,4 @@
+#projects {
+    @include window($secondary-background);
+    scroll-snap-align: center;
+}

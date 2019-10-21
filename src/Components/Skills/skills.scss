@@ -1,0 +1,41 @@
+#skills {
+    @include window($primary-background);
+    @include flex-column(center, center);
+    flex-wrap: wrap;
+    scroll-snap-align: center;
+}
+
+.skills-row {
+    height: 30vh;
+    width: 100%;
+    // border: 1px solid $primary-color;
+    @include flex-row(center, center)
+}
+
+.skills-box {
+    height: 100%;
+    width: 20%;
+    // border: 1px solid $primary-color;
+    @include flex-column(space-evenly, center);
+    i {
+        font-size: 11rem;
+        transition: font-size .5s;
+    }
+    h2 {
+        color: white;
+        transition: opacity .5s;
+    }
+    &:hover {
+        i {
+            font-size: 12rem;
+        }
+        h2 {
+            opacity: 0;
+        }
+    }
+
+}
+
+.devicon-wordpress-plain {
+    color: white;
+}

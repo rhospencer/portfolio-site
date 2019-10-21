@@ -1,9 +1,26 @@
 @import './variables.scss';
+@import './Components/Nav/nav.scss';
+@import './Components/Home/home.scss';
+@import './Components/About/about.scss';
+@import './Components/Projects/projects.scss';
+@import './Components/Skills/skills.scss';
+@import './Components/Contact/contact.scss';
 
 * {
   margin: 0;
   box-sizing: border-box;
-  overflow-x: hidden;
+}
+
+*::-webkit-scrollbar {
+  width: 0;
+}
+
+body {
+  height: 100vh;
+  overflow: hidden;
+  overflow-y: scroll;
+  scroll-behavior: smooth;
+  scroll-snap-type: y mandatory;
 }
 
 .App {
@@ -11,65 +28,7 @@
   width: 100vw;
 }
 
-nav {
+.empty-row {
   height: 10vh;
-  width: 100vw;
-  background: $primary-background;
-  @include flex-row(space-between, center);
-  position: fixed;
-
-}
-
-.name {
-  height: 40%;
-  width: 40%;
-  @include flex-row(flex-start, flex-end);
-  padding-left: 20px;
-  // background: red;
-  h4 {
-      font-size: 1.8rem;
-      color: $primary-color;
-  }
-  h6 {
-    font-size: .9rem;
-    font-weight: 200;
-    color: $font-color;
-  }
-}
-
-.nav-items {
-  height: 100%;
-  width: 60%;
-  @include flex-row(flex-end, center);
-  a {
-    text-decoration: none;
-    margin-right: 30px;
-    color: $font-color;
-    &:hover {
-      color: $primary-color;
-    }
-  }
-}
-
-#home {
-  @include window($secondary-background);
-  background-image: url('./assets/portfolio_hero.jpg');
-  background-repeat: no-repeat;
-  background-size: cover;
-}
-
-#about {
-  @include window($primary-background);
-}
-
-#projects {
-  @include window($secondary-background);
-}
-
-#skills {
-  @include window($primary-background);
-}
-
-#contact {
-  @include window($secondary-background);
+  width: 100vh;
 }
