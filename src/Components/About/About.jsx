@@ -33,6 +33,7 @@ export default class About extends Component {
                             <Slider {...settings}>
                                 <div className="photo1"></div>
                                 <div className="photo2"></div>
+                                <div className="photo3"></div>
                                 <div className="photo4"></div>
                             </Slider></div>
                         </div>

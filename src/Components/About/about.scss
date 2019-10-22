@@ -42,6 +42,12 @@
     background-image: url('../../assets/picture3.JPG');
 }
 
+.photo3 {
+    @include photo;
+    background-image: url('../../assets/photo3.jpg');
+    background-position-x: 55%;
+}
+
 .photo4 {
     @include photo;
     background-image: url('../../assets/picture2.JPG');
