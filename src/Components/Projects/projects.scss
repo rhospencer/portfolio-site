@@ -1,4 +1,24 @@
 #projects {
     @include window($secondary-background);
     scroll-snap-align: center;
+    @include flex-column(center, center);
 }
+
+.projects-holder {
+    @include flex-row(center, center);
+    width: 100%;
+    height: 90%;
+}
+
+.personal-holder {
+    width: 50%;
+    height: 100%;
+    background: red;
+}
+
+.group-holder {
+    width: 50%;
+    height: 100%;
+    background: blue;
+}
+

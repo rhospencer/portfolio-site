@@ -18,7 +18,7 @@
     // border: 1px solid $primary-color;
     @include flex-column(space-evenly, center);
     i {
-        font-size: 11rem;
+        font-size: 8rem;
         transition: font-size .5s;
     }
     h2 {
@@ -27,7 +27,7 @@
     }
     &:hover {
         i {
-            font-size: 12rem;
+            font-size: 10rem;
         }
         h2 {
             opacity: 0;

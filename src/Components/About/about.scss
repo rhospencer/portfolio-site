@@ -11,7 +11,7 @@
 .about-section {
     width: 80%;
     height: 80%;
-    @include flex-row(center, center);
+    @include flex-row(space-evenly, center);
     background: $secondary-background;
 }
 
@@ -61,6 +61,17 @@
 
 .about-info-holder {
     height: 80%;
-    width: 60%;
-    background: red;
+    width: 50%;
+    @include flex-column(flex-start, center);
+    text-align: center;
+    h1 {
+        color: $primary-color;
+        text-decoration: underline;
+        font-size: 3rem;
+        margin-bottom: 40px;
+    }
+    p {
+        color: $font-color;
+        font-size: 1.2rem;
+    }
 }

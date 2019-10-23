@@ -1,7 +1,5 @@
 import React, {Component} from 'react'
 import Slider from 'react-slick'
-import picture1 from '../../assets/picture1.png'
-import picture2 from '../../assets/picture2.JPG'
 
 export default class About extends Component {
     constructor() {
@@ -38,7 +36,15 @@ export default class About extends Component {
                             </Slider></div>
                         </div>
                         <div className="about-info-holder">
-
+                            <h1>Its great to meet you!</h1>
+                            <p>My name is Spencer Rhoton and I am a Full Stack Web Developer based
+                                out of St. George, Utah. My passion for coding developed during my 
+                                at DevMountain, a coding boot camp located in Lehi, Utah. I have built
+                                several projects using React, Express, PostgreSql and other tools. I 
+                                look forward to continuing my knowlage and learning new tools and technologies.
+                                During my free time I love to ski, run marathons, and spend time with my wife and puppy. 
+                                Feel free to contact me through my contact page. Thanks for checking out my portfolio site!
+                            </p>
                         </div>
                     </div>
 
