@@ -34,6 +34,13 @@ $secondary-background-opacity: #393e46cc;
     background-size: cover;
 }
 
+@mixin project-photo {
+    height: 35vh;
+    width: 100%;
+    background-repeat: no-repeat;
+    background-size: contain;
+}
+
 @mixin background-gradient() {
     background: rgb(35,41,49);
     background: linear-gradient(138deg, rgba(35,41,49,1) 0%, rgba(89,91,96,1) 50%, rgba(35,41,49,1) 100%);

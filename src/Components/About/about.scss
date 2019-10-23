@@ -13,6 +13,7 @@
     height: 80%;
     @include flex-row(space-evenly, center);
     background: $secondary-background;
+    border-radius: 10px;
 }
 
 .about-photos-holder {
@@ -62,7 +63,7 @@
 .about-info-holder {
     height: 80%;
     width: 50%;
-    @include flex-column(flex-start, center);
+    @include flex-column(center, center);
     text-align: center;
     h1 {
         color: $primary-color;

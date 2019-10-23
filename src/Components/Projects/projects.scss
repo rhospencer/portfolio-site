@@ -2,6 +2,7 @@
     @include window($secondary-background);
     scroll-snap-align: center;
     @include flex-column(center, center);
+    text-align: center;
 }
 
 .projects-holder {
@@ -11,14 +12,64 @@
 }
 
 .personal-holder {
+    @include flex-column(space-around, center);
     width: 50%;
     height: 100%;
-    background: red;
+    h1 {
+        color: $primary-color;
+        text-decoration: underline;
+        font-size: 2.5rem;
+    }
+    li {
+        text-align: left;
+        // width: 80%;
+        color: $font-color;
+        margin-bottom: 10px;
+    }
+}
+
+.project-photos-holder {
+    height: 40%;
+    width: 90%;
+}
+
+.project-photos {
+    width: 100%;
+    height: 60%;
+}
+
+.personal1{
+    @include project-photo;
+    background-image: url('../../assets/personal/personal1.png');
+    background-position-x: center;
+}
+
+.personal2 {
+    @include project-photo;
+    background-image: url('../../assets/personal/personal2.png');
+    background-position-x: center;
+}
+
+.personal3 {
+    @include project-photo;
+    background-image: url('../../assets/personal/personal3.png');
+    background-position-x: center;
+}
+
+.personal4 {
+    @include project-photo;
+    background-image: url('../../assets/personal/personal4.png');
+    background-position-x: center;
+}
+
+.list-holder {
+    width: 80%;
 }
 
 .group-holder {
     width: 50%;
     height: 100%;
-    background: blue;
 }
+
+
 

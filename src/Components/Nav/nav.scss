@@ -33,7 +33,10 @@ nav {
         margin-right: 30px;
         color: $font-color;
         &:hover {
-        color: $primary-color;
+            color: $primary-color;
+        }
+        &:active {
+            color: $primary-color;
         }
     }
 }

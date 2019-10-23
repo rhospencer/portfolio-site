@@ -2,3 +2,50 @@
     @include window($secondary-background);
     scroll-snap-align: center;
 }
+
+.contact-section-holder {
+    @include section;
+    @include flex-row(center, center);
+}
+
+.contact-section {
+    width: 80%;
+    height: 80%;
+    @include flex-column(flex-start, center);
+    background: $primary-background;
+    border-radius: 10px;
+}
+
+.contact-title {
+    height: 25%;
+    width: 100%;
+    @include flex-row(center, center);
+    h1 {
+        font-size: 3rem;
+        color: $primary-color;
+        text-decoration: underline;
+    }
+}
+
+.contact-info {
+    height: 75%;
+    width: 100%;
+    @include flex-column(center, flex-end);
+}
+
+.contact-item {
+    width: 80%;
+    height: 25%;
+    @include flex-row(flex-start, center);
+    i {
+        color: $primary-color;
+        margin-right: 20px;
+    }
+    h4 {
+        font-size: 1.5rem;
+        color: $font-color;
+    }
+    a {
+        text-decoration: none;
+    }
+}

@@ -36,7 +36,7 @@ export default class About extends Component {
                             </Slider></div>
                         </div>
                         <div className="about-info-holder">
-                            <h1>Its great to meet you!</h1>
+                            <h1>It's great to meet you!</h1>
                             <p>My name is Spencer Rhoton and I am a Full Stack Web Developer based
                                 out of St. George, Utah. My passion for coding developed during my 
                                 at DevMountain, a coding boot camp located in Lehi, Utah. I have built

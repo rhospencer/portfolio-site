@@ -16,11 +16,11 @@ export default class Nav extends Component {
                     {/* <h4>Spencer Rhoton</h4>&nbsp;<h6>Web Developer</h6> */}
                     </div>
                     <div className="nav-items">
-                    <a href="#home">Home</a>
-                    <a href="#about">About</a>
-                    <a href="#projects">Projects</a>
-                    <a href="#skills">Skills</a>
-                    <a href="#contact">Contact</a>
+                        <a href="#home">Home</a>
+                        <a href="#about">About</a>
+                        <a href="#projects">Projects</a>
+                        <a href="#skills">Skills</a>
+                        <a href="#contact">Contact</a>
                     </div>
                 </nav>
             </div>
