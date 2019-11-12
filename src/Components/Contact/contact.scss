@@ -1,6 +1,7 @@
 #contact {
     @include window($secondary-background);
     scroll-snap-align: center;
+    @include background-gradient;
 }
 
 .contact-section-holder {
@@ -14,6 +15,7 @@
     @include flex-column(flex-start, center);
     background: $primary-background;
     border-radius: 10px;
+    @include box-shadow;
 }
 
 .contact-title {

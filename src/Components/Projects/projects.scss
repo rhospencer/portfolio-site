@@ -1,19 +1,20 @@
 #projects {
     @include window($secondary-background);
+    @include background-gradient;
     scroll-snap-align: center;
     @include flex-column(center, center);
     text-align: center;
 }
 
 .projects-holder {
-    @include flex-row(center, center);
+    @include flex-row(space-around, center);
     width: 100%;
     height: 90%;
 }
 
 .personal-holder {
     @include flex-column(space-around, center);
-    width: 50%;
+    width: 45%;
     height: 100%;
     h1 {
         color: $primary-color;
@@ -25,7 +26,13 @@
         // width: 80%;
         color: $font-color;
         margin-bottom: 10px;
+        font-size: 1rem;
     }
+}
+
+.title-holder {
+    height: 10%;
+    width: 100%;
 }
 
 .project-photos-holder {
@@ -63,12 +70,51 @@
 }
 
 .list-holder {
+    @include flex-column(center, center);
     width: 80%;
+    height: 50%;
 }
 
 .group-holder {
-    width: 50%;
+    @include flex-column(space-around, center);
+    width: 45%;
     height: 100%;
+    h1 {
+        color: $primary-color;
+        text-decoration: underline;
+        font-size: 2.5rem;
+    }
+    li {
+        text-align: left;
+        // width: 80%;
+        color: $font-color;
+        margin-bottom: 10px;
+        font-size: 1rem;
+    }
+}
+
+.group1{
+    @include project-photo;
+    background-image: url('../../assets/group/group1.png');
+    background-position-x: center;
+}
+
+.group2 {
+    @include project-photo;
+    background-image: url('../../assets/group/group2.png');
+    background-position-x: center;
+}
+
+.group3 {
+    @include project-photo;
+    background-image: url('../../assets/group/group3.png');
+    background-position-x: center;
+}
+
+.group4 {
+    @include project-photo;
+    background-image: url('../../assets/group/group4.png');
+    background-position-x: center;
 }
 
 

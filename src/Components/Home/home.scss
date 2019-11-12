@@ -1,6 +1,6 @@
 #home {
     @include window($secondary-background);
-    background-image: url('../../assets/portfolio_hero.jpg');
+    background: linear-gradient( rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2) ), url('../../assets/portfolio_hero.jpg');
     background-repeat: no-repeat;
     background-size: cover;
     @include flex-row(center, center);

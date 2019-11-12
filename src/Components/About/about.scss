@@ -1,6 +1,7 @@
 #about {
     @include window($primary-background);
     scroll-snap-align: center;
+    @include background-gradient;
 }
 
 .about-section-holder {
@@ -12,8 +13,9 @@
     width: 80%;
     height: 80%;
     @include flex-row(space-evenly, center);
-    background: $secondary-background;
+    background: $primary-background;
     border-radius: 10px;
+    @include box-shadow;
 }
 
 .about-photos-holder {

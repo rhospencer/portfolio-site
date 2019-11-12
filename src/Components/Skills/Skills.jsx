@@ -58,6 +58,10 @@ export default class Skills extends Component {
                         <h2>Wordpress</h2>
                     </div>
                     <div className="skills-box">
+                        <i class="devicon-mongodb-plain colored"></i>
+                        <h2>mongoDB</h2>
+                    </div>
+                    <div className="skills-box">
                         <i class="devicon-nodejs-plain colored"></i>
                         <h2>Node.js</h2>
                     </div>

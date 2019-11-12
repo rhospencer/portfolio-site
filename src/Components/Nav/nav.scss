@@ -1,7 +1,7 @@
 nav {
     height: 10vh;
     width: 100vw;
-    background: $primary-background;
+    // background: $primary-background;
     @include flex-row(space-between, center);
     position: fixed;
     z-index: 2;
@@ -31,7 +31,9 @@ nav {
     a {
         text-decoration: none;
         margin-right: 30px;
+        opacity: 1;
         color: $font-color;
+        font-size: 1.5rem;
         &:hover {
             color: $primary-color;
         }

@@ -41,7 +41,12 @@ $secondary-background-opacity: #393e46cc;
     background-size: contain;
 }
 
-@mixin background-gradient() {
+@mixin background-gradient {
     background: rgb(35,41,49);
-    background: linear-gradient(138deg, rgba(35,41,49,1) 0%, rgba(89,91,96,1) 50%, rgba(35,41,49,1) 100%);
+background: linear-gradient(0deg, rgba(35,41,49,1) 5%, rgba(57,62,70,1) 50%, rgba(35,41,49,1) 95%);
+}
+
+@mixin box-shadow {
+    -webkit-box-shadow: 5px 5px 9px 3px #0b0c10; 
+    box-shadow: 5px 5px 9px 3px #0b0c10;
 }
