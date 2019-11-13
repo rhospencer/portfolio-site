@@ -1,5 +1,6 @@
 import React, {Component} from 'react'
 import Slider from 'react-slick'
+import photo from '../../assets/picture1.png'
 
 export default class About extends Component {
     constructor() {
@@ -34,6 +35,9 @@ export default class About extends Component {
                                 <div className="photo3"></div>
                                 <div className="photo4"></div>
                             </Slider></div>
+                        </div>
+                        <div className="single-photo">
+                            <img src={photo} alt="Photo of Spencer"/>
                         </div>
                         <div className="about-info-holder">
                             <h1>It's great to meet you!</h1>
