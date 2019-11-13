@@ -11,7 +11,7 @@ nav {
     height: 40%;
     width: 40%;
     @include flex-row(flex-start, flex-end);
-    padding-left: 20px;
+    // padding-left: 20px;
     // background: red;
     h4 {
         font-size: 1.8rem;
@@ -39,6 +39,40 @@ nav {
         }
         &:active {
             color: $primary-color;
+        }
+    }
+}
+
+
+@media (max-width: 768px) {
+    nav {
+        justify-content: center;
+    }
+    .name {
+        display: none;
+    }
+    .nav-items {
+        width: 80%;
+        justify-content: space-evenly;
+        a:nth-child(5) {
+            margin-right: 0;
+        }
+    }
+}
+
+@media (max-width: 540px) {
+    .nav-items {
+        justify-content: center;
+        a {
+            font-size: 1rem;
+        }
+    }
+}
+
+@media (max-width: 400px) {
+    .nav-items {
+        a {
+            margin-right: 15px;
         }
     }
 }
