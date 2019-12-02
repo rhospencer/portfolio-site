@@ -40,3 +40,67 @@
 .devicon-wordpress-plain {
     color: white;
 }
+
+@media (max-width: 900px) {
+    .skills-box {
+        i {
+            font-size: 6rem;
+        }
+        h2 {
+            font-size: 1.5rem;
+        }
+        &:hover {
+            i {
+                font-size: 8rem;
+            }
+        }
+
+    }
+}
+
+@media (max-width: 700px) {
+    #skills {
+        align-items: flex-start;
+    }
+    .skills-box {
+        i {
+            font-size: 4rem;
+        }
+        h2 {
+            font-size: 1rem;
+        }
+        &:hover {
+            i {
+                font-size: 6rem;
+            }
+        }
+
+    }
+}
+
+@media (max-width: 500px) {
+    .skills-box {
+        justify-content: center;
+        i {
+            font-size: 3rem;
+            margin-bottom: 30px;
+        }
+        h2 {
+            font-size: .8rem;
+        }
+        &:hover {
+            i {
+                font-size: 4rem;
+            }
+        }
+
+    }
+}
+
+@media (max-width: 370px) {
+    .skills-box {
+        h2 {
+            font-size: .6rem;
+        }
+    }
+}
