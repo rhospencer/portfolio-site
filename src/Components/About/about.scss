@@ -36,13 +36,13 @@
 
 .photo1{
     @include photo;
-    background-image: url('../../assets/picture1.png');
+    background-image: url('../../assets/picture1.jpg');
     background-position-x: center;
 }
 
 .photo2 {
     @include photo;
-    background-image: url('../../assets/picture3.JPG');
+    background-image: url('../../assets/picture3.jpg');
 }
 
 .photo3 {
@@ -53,7 +53,7 @@
 
 .photo4 {
     @include photo;
-    background-image: url('../../assets/picture2.JPG');
+    background-image: url('../../assets/picture2.jpg');
     background-position-y: 80%;
 }
 

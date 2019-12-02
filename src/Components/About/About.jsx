@@ -1,6 +1,6 @@
 import React, {Component} from 'react'
 import Slider from 'react-slick'
-import photo from '../../assets/picture1.png'
+import photo from '../../assets/picture1.jpg'
 
 export default class About extends Component {
     constructor() {
