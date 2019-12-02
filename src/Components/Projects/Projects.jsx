@@ -38,6 +38,9 @@ export default class Projects extends Component {
                                     <div className="personal4"></div>
                                 </Slider>
                             </div>
+                            <div className="project-photos-single">
+                                <div className="personal3"></div>
+                            </div>
                         </div>
                         <div className="list-holder">
                             <ul>
@@ -60,6 +63,9 @@ export default class Projects extends Component {
                                     <div className="group3"></div>
                                     <div className="group4"></div>
                                 </Slider>
+                            </div>
+                            <div className="project-photos-single">
+                                <div className="group4"></div>
                             </div>
                         </div>
                         <div className="list-holder">

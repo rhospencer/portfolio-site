@@ -43,6 +43,13 @@
 .project-photos {
     width: 100%;
     height: 60%;
+    button {
+        display: flex;
+    }
+}
+
+.project-photos-single {
+    display: none;
 }
 
 .personal1{
@@ -117,9 +124,116 @@
     background-position-x: center;
 }
 
-@media (max-width: 1000px) {
-    .projects-holder {
+@media (max-width: 1100px) {
+    .list-holder {
+        ul {
+            li {
+                font-size: .8rem;
+            }
+        }
+    }
+}
+
+@media (max-width: 760px) {
+    .project-photos {
         display: none;
+    }
+
+    .project-photos-single {
+        display: flex;
+    }
+
+    .personal3 {
+        height: 30vh;
+    }
+    .group4 {
+        height: 30vh;
+    }
+    .project-photos-holder {
+        height: 30%;
+    }
+    .title-holder {
+        h1 {
+            font-size: 2rem;
+        }
+    }
+    .list-holder {
+        ul {
+            li {
+                font-size: .7rem;
+            }
+        }
+    }
+}
+
+@media (max-width: 600px) {
+    .project-photos-holder {
+        height: 20%;
+        margin-bottom: 40px;
+    }
+    .personal3 {
+        height: 20vh;
+    }
+    .group4 {
+        height: 20vh;
+    }
+    .title-holder {
+        h1 {
+            font-size: 1.6rem;
+        }
+    }
+    .personal-holder {
+        justify-content: center;
+    }
+    .group-holder {
+        justify-content: center;
+    }
+}
+
+@media (max-width: 500px) {
+    .projects-holder {
+        @include flex-column(center, center);
+    }
+    .title-holder {
+        margin-bottom: 20px;
+    }
+    .personal-holder {
+        width: 100vw;
+    }
+    .group-holder {
+        width: 100vw;
+    }
+    .project-photos-holder {
+        height: 30%;
+    }
+    .list-holder {
+        height: 40%;
+        width: 90%;
+        line-height: 80%;
+        ul {
+            li {
+                font-size: .2rem;
+                margin: 0;
+            }
+        }
+    }
+}
+
+@media (max-width: 375px) {
+    .personal3 {
+        height: 15vh;
+    }
+    .group4 {
+        height: 15vh;
+    }
+    .project-photos-holder {
+        height: 25%;
+    }
+    .title-holder {
+        margin-bottom: 10px;
+        h1 {
+            font-size: 1.4rem;
+        }
     }
 }
 
